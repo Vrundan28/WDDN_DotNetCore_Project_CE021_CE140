@@ -16,8 +16,8 @@
 <div style="margin-top:1rem">
     <div class="row justify-content-center m-1">
         <div class="col-sm-8">
-            <div class="card" style="display: flex; align-items: center; justify-content: center">
-                <div class="card-header" style="display:flex ; flex-direction:row">
+            <div class="card">
+                <div class="card-header" style="display:flex ; ">
                     <img alt="loginImg" class="post_img" src="@ProfilePicPath" asp-append-version="true" />
                     <div class="post_user">
                         <h5>@Model.question1.Name</h5>
@@ -42,10 +42,10 @@
 
 
 <div>
-    <h4 style="justify-content:center; display:flex;align-items:center ;margin-top:1rem; margin-bottom:1rem">Answer</h4>
+    
     <div class="row justify-content-center m-1">
         <div class="col-sm-8">
-            <div class="card" style="display:flex;align-items:center;justify-content:center;">
+            <div class="card" >
                 <div class="card-header">
                     <img alt="loginImg" class="post_img" src="@ProfilePicPath1" asp-append-version="true" />
                     <div class="post_user">
@@ -62,14 +62,14 @@
 
 </div>
 <div>
-    @if (Model.answer.appUserId == @userId)
+    @if (Model.answer1.appUserId == @userId)
     {
-        <a style="max-height: 5vh; text-align: center;" asp-action="Edit" asp-controller="Answer" asp-route-id="@Model.answer.Id"><i class="bi bi-pencil-square"></i></a>
+        <a style="max-height: 5vh; text-align: center;" asp-action="Edit" asp-controller="Answer" asp-route-id="@Model.answer1.Id"><i class="bi bi-pencil-square"></i></a>
     }
     &nbsp;&nbsp;&nbsp;
-    @if (Model.answer.appUserId == @userId)
+    @if (Model.answer1.appUserId == @userId)
     {
-        <a style="max-height: 5vh; text-align: center;" asp-action="Delete" asp-controller="Answer" asp-route-id="@Model.answer.Id"> <i class="bi bi-trash-fill"></i></a>
+        <a style="max-height: 5vh; text-align: center;" asp-action="Delete" asp-controller="Answer" asp-route-id="@Model.answer1.Id"> <i class="bi bi-trash-fill"></i></a>
     }
     &nbsp;&nbsp;&nbsp;
 </div>

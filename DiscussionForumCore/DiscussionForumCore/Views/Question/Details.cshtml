@@ -15,7 +15,7 @@
     <div class="row justify-content-center m-1">
         <div class="col-sm-8">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header" style="display:flex">
                     <img alt="loginImg" class="post_img" src="@ProfilePicPath2" asp-append-version="true" />
                     <div class="post_user">
                         <h5>@Model.question1.Name</h5>
@@ -65,14 +65,10 @@
         <div class="col-sm-8">
             <div class="card">
                 <div class="card-header" style="display: flex; ">
-                    <img alt="loginImg" class="post_img" src="@ProfilePicPath"  asp-append-version="true" />
+                    <img alt="loginImg" class="post_img" src="@ProfilePicPath" asp-append-version="true" />
                     <div class="post_user">
                         <h5>@item.Name</h5>
                     </div>
-
-                </div>
-                <div class="card-body" style="display: flex; ">
-                    <h4>@item.answer</h4>
                     <div style="margin-left:auto">
                         @if (@item.appUserId == userId)
                         {
@@ -86,6 +82,10 @@
                             <a style="max-height: 5vh; text-align: center;" asp-action="Delete" asp-controller="Answer" asp-route-id="@item.Id"><i class="bi bi-trash-fill"></i></a>
                         } &nbsp; &nbsp; &nbsp;
                     </div>
+                </div>
+                <div class="card-body" style="display: flex; ">
+                    <h4>@item.answer</h4>
+                    
                     <br />
                 </div>
             </div>

@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Details";
-    var PhotoPath1 = "~/images/";
+    var PhotoPath = "~/images/";
     string userId = ViewBag.UserId;
     Boolean flag = false;
 
@@ -12,7 +12,7 @@
 @foreach (Answer item in Model)
 {
 
-    var ProfilePicPath = PhotoPath1 + item.ProfilePic;
+    var ProfilePicPath = PhotoPath + item.ProfilePic;
     flag = true;
     <div class="row justify-content-center" style="margin:5%">
         <div class="col-sm-8">
@@ -36,10 +36,12 @@
 
                 </div>
                 <div class="card-body" style="display: flex;align-items:center;justify-content:center">
-                    
+
                     <h4>@item.answer</h4>
                     <br />
+                   
                 </div>
+
             </div>
         </div>
     </div>
@@ -47,5 +49,5 @@
 
 @if (!flag)
 {
-    <h3>No Answers Posted </h3>
+    <h3  style="display:flex;align-items:center;justify-content:center">No Answers Posted </h3>
 }

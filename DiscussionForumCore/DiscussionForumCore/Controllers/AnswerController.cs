@@ -72,7 +72,7 @@ namespace DiscussionForumCore.Controllers
             dynamic mymodel = new ExpandoObject();
             Question question = _answerRepository.GetQuestion(answer.questionId);
             mymodel.question1 = question;
-            mymodel.answer = answer;
+            mymodel.answer1 = answer;
 
             return View(mymodel);
         }

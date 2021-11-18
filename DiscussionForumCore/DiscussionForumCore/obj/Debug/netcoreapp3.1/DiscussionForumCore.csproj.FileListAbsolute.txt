@@ -540,5 +540,5 @@ D:\Vrundan\WDDN\DiscussionForumCore\DiscussionForumCore\obj\Debug\netcoreapp3.1\
 D:\Vrundan\WDDN\DiscussionForumCore\DiscussionForumCore\obj\Debug\netcoreapp3.1\DiscussionForumCore.pdb
 D:\Vrundan\WDDN\DiscussionForumCore\DiscussionForumCore\obj\Debug\netcoreapp3.1\DiscussionForumCore.genruntimeconfig.cache
 D:\Vrundan\WDDN\DiscussionForumCore\DiscussionForumCore\obj\Debug\netcoreapp3.1\DiscussionForumCore.csproj.CopyComplete
-D:\Vrundan\WDDN\DiscussionForumCore\DiscussionForumCore\obj\Debug\netcoreapp3.1\Razor\Views\Question\Edit.cshtml.g.cs
 D:\Vrundan\WDDN\DiscussionForumCore\DiscussionForumCore\obj\Debug\netcoreapp3.1\Razor\Views\SavedPost\_Layout.cshtml.g.cs
+D:\Vrundan\WDDN\DiscussionForumCore\DiscussionForumCore\obj\Debug\netcoreapp3.1\Razor\Views\Question\Edit.cshtml.g.cs

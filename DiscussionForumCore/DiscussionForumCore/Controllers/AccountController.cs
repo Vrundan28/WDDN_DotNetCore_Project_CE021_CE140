@@ -105,7 +105,7 @@ namespace DiscussionForumCore.Controllers
             string userId = userManager.GetUserId(HttpContext.User);
 
             ViewData["userId"] = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var questions = _context.questions.Where(q => q.appUserId == userId);
+            var questions = _context.questions.Where(q => q.appUserId == userId).OrderByDescending(o=>o.CreateTime);
             return View(questions);
         }
 
@@ -116,7 +116,7 @@ namespace DiscussionForumCore.Controllers
             string userId = userManager.GetUserId(HttpContext.User);
 
             ViewData["userId"] = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var answers = _context.answers.Where(q => q.appUserId == userId);
+            var answers = _context.answers.Where(q => q.appUserId == userId).OrderByDescending(o => o.CreateTime);
             return View(answers);
         }
 

@@ -145,6 +145,10 @@ namespace DiscussionForumCore.Controllers
                 Question question = _questionRepository.GetQuestion(questionChanges.Id);
                 question.question = questionChanges.question;
                 question.category = questionChanges.category;
+                question.Name = questionChanges.Name;
+                question.ProfilePic = questionChanges.ProfilePic;
+                question.CreateTime = questionChanges.CreateTime;
+                question.PhotoPath = questionChanges.PhotoPath;
                 //question.QuestionImage = questionChanges.QuestionImage;
                 Question updated_question = _questionRepository.Update(question);
                 return RedirectToAction("Index");
